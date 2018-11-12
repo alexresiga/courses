@@ -1,0 +1,11 @@
+1|wow|mhm|12
+11|lol|woaw|3
+21|ce|mda|10
+22|da|ce|10
+23|da|da|10
+25|da|da|10
+26|da|da|10
+31|alttext|ce|51
+41|nu|corect|21
+50|da|nu|15
+51|text|corect|30

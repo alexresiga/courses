@@ -1,0 +1,38 @@
+UNIX FILE TYPES
+
+-REGULAR
+-DIRECTORIES
+-HARD LINKS
+-SYMBOLIC LINKS
+-SOCKETS
+-FIFO
+...
+
+Symbolic Links
+-create with ln -s target link_name
+-behaves exactly as the target file
+-windows equivalent - junctions mklink /?
+
+Volume mounting
+command: mount
+to make them permanent look into /etc/fstab, but watch out, you may make system unbootable
+
+Unix File System Structure
+Block | Content
+-------------------
+0     | boot block
+1     | super block
+-------------------
+2     |
+.     |
+.     | inode blocks
+.     |
+n     |
+-------------------
+n+1   |
+.     | Data blocks
+.     |
+
+Unix processes: fork, exit, wait
+to create a process, use the fork system call
+fork, clones the current process

@@ -1,0 +1,1 @@
+sa se afiseze media timpilor de rulare in secunde pentru procesele cu pid par penultima coloana

@@ -1,0 +1,36 @@
+total 16
+drwxr-xr-x  6 alex  staff   192 Mar 14 14:00 01
+drwxr-xr-x  5 alex  staff   160 Mar 14 14:22 02
+drwxr-xr-x  4 alex  staff   128 Mar 15 09:47 03
+-rw-r--r--  1 alex  staff  6774 Mar  8 08:58 passwd
+total 8
+-rw-r--r--  1 alex  staff  205 Mar 15 09:47 a
+-rwx------  1 alex  staff  336 Mar 15 09:47 a.sh
+-rw-r--r--  1 alex  staff  308 Mar 15 09:47 /Users/alex/SO/03/a
+-rwx------  1 alex  staff  336 Mar 15 09:47 /Users/alex/SO/03/a.sh
+total 16
+-rw-r--r--  1 alex  staff    0 Mar  8 11:09 1000
+-rw-r--r--  1 alex  staff   14 Mar  8 09:44 a.py
+-rwx------  1 alex  staff  199 Mar  8 12:00 a.sh
+-rw-r--r--  1 alex  staff  14 Mar  8 09:44 /Users/alex/SO/02/a.py
+-rw-r--r--  1 alex  staff  0 Mar  8 11:09 /Users/alex/SO/02/1000
+-rwx------  1 alex  staff  199 Mar  8 12:00 /Users/alex/SO/02/a.sh
+total 32
+-rwxr-xr-x  1 alex  staff  8648 Mar  7 20:13 a
+-rw-r--r--  1 alex  staff   105 Mar 14 14:00 a.c
+drwxr-xr-x  3 alex  staff    96 Mar  7 20:11 a.dSYM
+drwxr-xr-x  2 alex  staff    64 Mar  7 20:04 new_folder
+-rwxr-xr-x  1 alex  staff  8648 Mar  7 20:13 /Users/alex/SO/01/a
+-rw-r--r--  1 alex  staff  105 Mar 14 14:00 /Users/alex/SO/01/a.c
+total 0
+drwxr-xr-x  4 alex  staff  128 Mar  7 20:11 Contents
+total 8
+-rw-r--r--  1 alex  staff  630 Mar  7 20:13 Info.plist
+drwxr-xr-x  3 alex  staff   96 Mar  7 20:11 Resources
+total 0
+drwxr-xr-x  3 alex  staff  96 Mar  7 20:11 DWARF
+total 24
+-rw-r--r--  1 alex  staff  8766 Mar  7 20:13 a
+-rw-r--r--  1 alex  staff  8766 Mar  7 20:13 /Users/alex/SO/01/a.dSYM/Contents/Resources/DWARF/a
+-rw-r--r--  1 alex  staff  630 Mar  7 20:13 /Users/alex/SO/01/a.dSYM/Contents/Info.plist
+-rw-r--r--  1 alex  staff  6774 Mar  8 08:58 /Users/alex/SO/passwd

@@ -1,0 +1,48 @@
+1. Sa se scrie un program care creeaza zece thread-uri si are doua
+   variabile globale numite numere_pare si numere_impare. Fiecare thread
+   va genera numere aleatoare si in functie de paritatea lor va incrementa
+   variabila globala respectiva. Thread-urile se opresc cand ambele
+   variabile depasesc 100. Programul principal afiseaza cele doua variabile
+   globale si apoi se termina.
+
+Sa se scrie un program care primeste oricati parametri (stringuri oricat de lungi) din linia de comanda.
+Pentru fiecare parametru creeaza cate un thread, caruia ii da ca si argument parametrul corespunzator.
+Fiecare thread va trebui sa afiseze argumentul primit pe o linie, caracter cu caracter, fara a permite intercalarea caracterelor din mai multe stringuri.
+
+Exemplu:
+
+$ ./program abcdefghijklm aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 1234567890 nopqrstuvwxyz bbbbbbbbbbbbbbbbbbbb
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+nopqrstuvwxyz
+1234567890
+bbbbbbbbbbbbbbbbbbbb
+abcdefghijklm
+
+Implementarea este corecta daca la rulari consecutive ordinea stringurilor afisate difera, insa niciodata nu se intercaleaza caracterele unui argument cu cele ale altui argument.
+
+Sa se scrie un script care primeste ca parametru o cale catre un director si pentru toate fisierele pentru care userul curent are drept de citire incearca sa adauge si drept de scriere si afiseaza pe ecran: "Modific drepturile pentru: <fisier>." pentru fiecare fisier la care incearca sa aplice modificarile.
+
+4) Sa se scrie un program care primeste din linia de comanda un numar natural N si creeaza 5 threaduri care primesc fiecare ca parametru numarul de ordine cu care este creat (0-4). Threadurile incrementeaza prin rotatie (pe baza numarului de ordine) o variabila globala "g" (care initial are valoarea 0) cu o valoare aleatoare in intervalul [0-9] pana cand variabila g ajunge mai mare decat N. Dupa incrementare fiecare thread va afisa mesajul: "Thread <index> incrementeaza <g> cu <delta> si ramane <noul g>!" 
+
+Scrieti o aplicatie care simuleaza traversarea unui pod in reparatie, de catre masini care trec din ambele directii.
+- un thread va fi "trafic controller", odata la 5 secunde schimba directia din care sunt permise masini
+- fiecare masina va fi reprezentata de un thread, va avea un id unic, si un camp care indica directia
+- masinile pot trece intr-o singura directie la un moment dat
+- numarul maxim de masini care pot fi pe pod la un moment dat se defineste la o valoare maxima MAX_BRIDGE (~10)
+- fiecare masina sta pe pod un timp random intre 500 si 1000ms
+- cand se schimba directia de mers, masinile care primesc "verde" trebuie sa astepte pana cand toate masinile din directia opusa elibereaza podul
+- masinile care asteapta sa traverseze podul nu stau intr-o coada, ordinea in care traverseaza nu trebuie sa fie prestabilita
+
+
+
+4. Sa se scrie un program care primeste un nr N ca parametru din linia de comanda (N<10), si creeaza 10 threaduri. Threadurile vor concura sa genereze cifre pe care sa le adauge la o variabla int X (dupa formula X = X*10 + C, unde C este cifra nou generata). Threadul care genereaza ultima cifra (a N-a) afiseaza numarul final.
+
+
+6) Sa se scrie un program care primese un fisier ca si parametru in linia de comanda. Threadul principal deschide fisierul si creeaza 5 threaduri care primesc ca si parametru descriptorul fisierului. Fiecare thread va citi cate un caracter si va incrementa variabila globala "carcterePare" daca codul ASCII al caracterului este par respectiv variabila globala "caractereImpare" daca codul ASCII al caracterului este impar.
+
+
+3. Sa se scrie un program care citeste un nr N de la tastatura (N<=100), si creeaza 5 threaduri. Threadurile vor concura sa genereze caractere aleatoare (intre 'a' si 'z') pe care sa le adauge intr-un sir primit ca parametru de la threadul principal (main) atunci cand sunt create, pana se atinge lungimea N a sirului. Threadul principal afiseaza la final sirul rezultat.
+
+
+Scrieti un script shell care primeste in linia de comanda o cale catre un director si afiseaza pe ecran urmatoarele informatii:
+	"In directorul <nume director> sunt: <x> fisiere executabile, <y> fisiere neexecutabile <z> subdirectoare."
