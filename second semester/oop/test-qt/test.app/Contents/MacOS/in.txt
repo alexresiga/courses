@@ -1,5 +1,0 @@
-c++ | programming, oop | it is a
-java | prog lang, web | java is well suited
-jack sparrow | pirate, caraab | protagonsit of PCC
-Quadratic equation | square root, discrmint | a x b 2 c 0
-university | higher education | provide undergraduate

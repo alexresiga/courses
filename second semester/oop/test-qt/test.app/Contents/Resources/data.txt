@@ -1,2 +1,0 @@
-c++ | programming, oop | it is a
-java | prog lang, web | java is well suited
