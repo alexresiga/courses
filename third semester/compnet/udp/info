@@ -1,0 +1,13 @@
+socket:
+
+socket()
+bind()
+recvfrom()
+sendto()
+
+client: 
+socket()
+sendto()
+recvfrom()
+
+client must send first so the server knows who the clients are

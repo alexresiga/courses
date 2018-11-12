@@ -1,0 +1,276 @@
+
+STACK:
+ReadFile(var_f, var_c); print(var_c); CloseRFile(var_f) | OpenRFile(var_f, test.in) | 
+SYM TABLE:
+
+OUTPUT:
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+ReadFile(var_f, var_c); print(var_c); CloseRFile(var_f) | 
+SYM TABLE:
+var_f->3
+
+OUTPUT:
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(var_c); CloseRFile(var_f) | ReadFile(var_f, var_c) | 
+SYM TABLE:
+var_f->3
+
+OUTPUT:
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(var_c); CloseRFile(var_f) | 
+SYM TABLE:
+var_f->3
+var_c->15
+
+OUTPUT:
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+CloseRFile(var_f) | print(var_c) | 
+SYM TABLE:
+var_f->3
+var_c->15
+
+OUTPUT:
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+CloseRFile(var_f) | 
+SYM TABLE:
+var_f->3
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+
+SYM TABLE:
+var_f->3
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+if a then v = 2 else v = 3; print(v) | a = 2-2 | 
+SYM TABLE:
+
+OUTPUT:
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+if a then v = 2 else v = 3; print(v) | 
+SYM TABLE:
+a->0
+
+OUTPUT:
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(v) | if a then v = 2 else v = 3 | 
+SYM TABLE:
+a->0
+
+OUTPUT:
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(v) | v = 3 | 
+SYM TABLE:
+a->0
+
+OUTPUT:
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(v) | 
+SYM TABLE:
+a->0
+v->3
+
+OUTPUT:
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+
+SYM TABLE:
+a->0
+v->3
+
+OUTPUT:
+3
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+ReadFile(var_f, var_c); print(var_c); CloseRFile(var_f) | OpenRFile(var_f, test.in) | 
+SYM TABLE:
+
+OUTPUT:
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+ReadFile(var_f, var_c); print(var_c); CloseRFile(var_f) | 
+SYM TABLE:
+var_f->3
+
+OUTPUT:
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(var_c); CloseRFile(var_f) | ReadFile(var_f, var_c) | 
+SYM TABLE:
+var_f->3
+
+OUTPUT:
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(var_c); CloseRFile(var_f) | 
+SYM TABLE:
+var_f->3
+var_c->15
+
+OUTPUT:
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+CloseRFile(var_f) | print(var_c) | 
+SYM TABLE:
+var_f->3
+var_c->15
+
+OUTPUT:
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+CloseRFile(var_f) | 
+SYM TABLE:
+var_f->3
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+3->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+
+SYM TABLE:
+var_f->3
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+ReadFile(var_f, var_c); print(var_c); CloseRFile(var_f) | OpenRFile(var_f, test.in) | 
+SYM TABLE:
+
+OUTPUT:
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+ReadFile(var_f, var_c); print(var_c); CloseRFile(var_f) | 
+SYM TABLE:
+var_f->4
+
+OUTPUT:
+
+FILE TABLE:
+4->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(var_c); CloseRFile(var_f) | ReadFile(var_f, var_c) | 
+SYM TABLE:
+var_f->4
+
+OUTPUT:
+
+FILE TABLE:
+4->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(var_c); CloseRFile(var_f) | 
+SYM TABLE:
+var_f->4
+var_c->15
+
+OUTPUT:
+
+FILE TABLE:
+4->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+CloseRFile(var_f) | print(var_c) | 
+SYM TABLE:
+var_f->4
+var_c->15
+
+OUTPUT:
+
+FILE TABLE:
+4->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+CloseRFile(var_f) | 
+SYM TABLE:
+var_f->4
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+4->test.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+
+SYM TABLE:
+var_f->4
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
