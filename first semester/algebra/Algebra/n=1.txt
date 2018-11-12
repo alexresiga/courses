@@ -1,0 +1,3 @@
+Expected number of bases given by formula: 1
+((1,),)
+Counter of bases printed by the program: 1

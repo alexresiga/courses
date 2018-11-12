@@ -1,0 +1,77 @@
+AND dest, source
+dest = dest and source
+same size of oeprands
+al: 10101101
+bl: 01101101
+
+and al, bl => AL = 0101101
+
+OR dest, source
+dest = dest or source
+same size of oeprands
+al: 10101101
+bl: 01101101
+
+or al, bl => AL = 11101101
+
+XOR dest, source
+dest = dest xor source
+same size of oeprands
+al: 10101101
+bl: 01101101
+
+XOR al, bl => AL = 11000000
+xor eax, eax => EAX = 0 
+
+NOT dest = register or memory
+al: 10101101
+
+not al => AL = 01010010
+
+
+SHL dest, count
+dest can be reg, memory
+count constant, CL register
+sal shift arithmetic left = same as shl 
+
+
+SHR dest, count
+dest can be reg, memory
+count constant, CL register
+sar shift arithmetic right = signed operation 
+
+al: 1010 1101
+
+
+ROL rotate left
+ROL dest, count 
+dest: register, memory
+count: constant, CL register
+al: 1010 1101
+ROL al, 1
+
+RCL rotate with carry left
+ROL dest, count 
+dest: register, memory
+count: constant, CL register
+
+
+STC = set carry => CF = 1
+CLC = clear carry => CF = 0
+
+al: 10101101
+STC 
+RCL al, 1
+
+
+ROR rotate right
+ROR dest, count 
+dest: register, memory
+count: constant, CL register
+al: 1010 1101
+ROR al, 1
+
+RCR rotate with carry right
+ROR dest, count 
+dest: register, memory
+count: constant, CL register

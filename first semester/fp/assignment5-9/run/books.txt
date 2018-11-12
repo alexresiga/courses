@@ -1,0 +1,21 @@
+12|Oscar|asta este o descriere|ARTHUR|True
+13|One day|alta DESCRIERE|gabi|True
+14|Algorithms|aici este vorba despre|Tudor|True
+15|Python for noobs|cea mai tare carte|CoRmEn|True
+16|TITLU|nu stiu ce se intampla aici|Author|True
+17|nu_mai_vreau|asta este o descriere|ARTHUR|True
+18|alt_titlu_lol|asta este o descriere|ARTHUR|True
+19|da_men|asta este o descriere|ARTHUR|True
+20|Oscar|asta este o descriere|ARTHUR|True
+21|alt titlu|asta este o descriere|ARTHUR|True
+22|ceva|asta este o descriere|ARTHUR|True
+23|altceva|asta este o descriere|ARTHUR|True
+24|cuvinte|asta este o descriere|ARTHUR|True
+25|nustiu|asta este o descriere|ARTHUR|True
+26|lol|asta este o descriere|ARTHUR|True
+27|da lol|asta este o descriere|ARTHUR|True
+28|Oscar|asta este o descriere|ARTHUR|True
+212|Oscar|asta este o descriere|ARTHUR|True
+55|asd|asd|asd|True
+77|asd|das|asd|True
+66|asd|asd|asd|True

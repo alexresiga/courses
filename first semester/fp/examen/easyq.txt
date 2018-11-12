@@ -1,0 +1,6 @@
+1;cel mai mare;3;4;3;4;easy
+2;cel mai mare;1;2;3;3;easy
+4;cel mai mic;3;4;3;3;easy
+9;numarul mediu;2;3;4;3;easy
+3;cel mai mic;2;3;4;2;medium
+5;cel mai mare;1;2;3;3;hard

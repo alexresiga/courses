@@ -1,0 +1,7 @@
+3;a mole can be;animal;quantity;both;both;hard
+6;roman empire fell in;654;546;476;476;hard
+7;which one is perfect number;3;4;6;6;hard
+1;which number is the largest;3;4;3;4;easy
+2;cel mai mic;2;3;4;2;easy
+4;which is not a fish;carp;orca;eel;orca;medium
+5;which number is prime;2;32;9;2;easy

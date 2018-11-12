@@ -1,0 +1,13 @@
+1;which number is the largest;3;4;3;4;easy
+2;cel mai mic;2;3;4;2;easy
+3;a mole can be;animal;quantity;both;both;hard
+4;which is not a fish;carp;orca;eel;orca;medium
+5;which number is prime;2;32;9;2;easy
+6;roman empire fell in;654;546;476;476;hard
+7;which one is perfect number;3;4;6;6;hard
+8;negative number is;-1;2;3;-1;medium
+9;numarul mediu;2;3;4;3;easy
+10;number of wonders;4;5;7;7;medium
+11;capitala cehia;roma;praga;berlin;praga;medium
+12;da;1;2;3;1;easy
+13;da;1;2;3;1;easy

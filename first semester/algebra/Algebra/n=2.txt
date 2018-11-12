@@ -1,0 +1,8 @@
+Expected number of bases given by formula: 6
+((0, 1), (1, 0))
+((0, 1), (1, 1))
+((1, 0), (0, 1))
+((1, 0), (1, 1))
+((1, 1), (0, 1))
+((1, 1), (1, 0))
+Counter of bases printed by the program: 6

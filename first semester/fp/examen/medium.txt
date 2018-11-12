@@ -1,0 +1,6 @@
+4;which is not a fish;carp;orca;eel;orca;medium
+8;negative number is;-1;2;3;-1;medium
+10;number of wonders;4;5;7;7;medium
+11;capitala cehia;roma;praga;berlin;praga;medium
+1;which number is the largest;3;4;3;4;easy
+2;cel mai mic;2;3;4;2;easy
