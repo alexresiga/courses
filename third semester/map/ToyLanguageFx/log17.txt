@@ -1,0 +1,1466 @@
+
+Thread number: 1
+STACK: 
+v = 10
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v))
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(9)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(8)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(7)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+print(v)
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(6)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(5)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(4)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(3)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(2)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(1)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(0)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+100
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v))
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(9)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(8)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(7)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+print(v)
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(6)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(5)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(4)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(3)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(2)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(1)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(0)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+100
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v))
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(9)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(8)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(7)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+print(v)
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(6)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(5)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(4)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(3)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(2)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(1)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(0)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+100
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v))
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(9)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(8)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(7)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+print(v)
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(6)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(5)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(4)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(3)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(2)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(1)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(0)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+100
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v)); sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(v = v-1; v = v-1; print(v))
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10); print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(10)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+v = v-1; print(v)
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(9)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1; print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(8)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+v = v-1
+print(v)
+SYMBOL TABLE:
+v->9
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(7)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+print(v)
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(6)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(5)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(4)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(3)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(2)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(1)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+sleep(0)
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v*10)
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+v->10
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+v->8
+
+
+OUTPUT: 
+8
+100
+HEAP: 
+
+-----------------------------------------------------

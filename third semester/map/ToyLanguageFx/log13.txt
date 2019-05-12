@@ -1,0 +1,963 @@
+
+Thread number: 1
+STACK: 
+NewHeap(v1,2)
+NewHeap(v2,3); NewHeap(v3,4); NewLatch(cnt, readHeap(v2)); fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))); CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewHeap(v2,3); NewHeap(v3,4); NewLatch(cnt, readHeap(v2)); fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))); CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+v1->1
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewHeap(v2,3)
+NewHeap(v3,4); NewLatch(cnt, readHeap(v2)); fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))); CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+v1->1
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewHeap(v3,4); NewLatch(cnt, readHeap(v2)); fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))); CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+2->3
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewHeap(v3,4)
+NewLatch(cnt, readHeap(v2)); fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))); CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+2->3
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewLatch(cnt, readHeap(v2)); fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))); CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewLatch(cnt, readHeap(v2))
+fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))); CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))); CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1)))
+CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+CountDownLatch(cnt); fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+WriteHeap(v1,readHeap(v1)*10); print(readHeap(v1))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+CountDownLatch(cnt)
+fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+WriteHeap(v1,readHeap(v1)*10)
+print(readHeap(v1))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+
+HEAP: 
+1->2
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(1)
+fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+print(readHeap(v1))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))); CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+HEAP: 
+1->20
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2)))
+CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+HEAP: 
+1->20
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+CountDownLatch(cnt); fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+WriteHeap(v2,readHeap(v2)*10); print(readHeap(v2))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+HEAP: 
+1->20
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+CountDownLatch(cnt)
+fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+WriteHeap(v2,readHeap(v2)*10)
+print(readHeap(v2))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+HEAP: 
+1->20
+2->3
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(1)
+fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+print(readHeap(v2))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+HEAP: 
+1->20
+2->30
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))); CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+HEAP: 
+1->20
+2->30
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3)))
+CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+HEAP: 
+1->20
+2->30
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+CountDownLatch(cnt); LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+WriteHeap(v3,readHeap(v3)*10); print(readHeap(v3))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+HEAP: 
+1->20
+2->30
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+CountDownLatch(cnt)
+LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+WriteHeap(v3,readHeap(v3)*10)
+print(readHeap(v3))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+HEAP: 
+1->20
+2->30
+3->4
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(1)
+LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+print(readHeap(v3))
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+LatchAwait(cnt); print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+1
+40
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+LatchAwait(cnt)
+print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+1
+40
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(100); LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+1
+40
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(100)
+LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+1
+40
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+LatchAwait(cnt); print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+1
+40
+100
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+LatchAwait(cnt)
+print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+1
+40
+100
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(100)
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+1
+40
+100
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+cnt->1
+v1->1
+v2->2
+v3->3
+
+
+OUTPUT: 
+1
+20
+1
+30
+1
+40
+100
+100
+HEAP: 
+1->20
+2->30
+3->40
+-----------------------------------------------------

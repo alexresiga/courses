@@ -1,6 +1,7 @@
 package model.Statement;
 
 import model.ProgramState;
+import model.utils.IStack;
 import model.utils.MyStack;
 
 public class CompoundStatement implements IStatement {
@@ -14,7 +15,7 @@ public class CompoundStatement implements IStatement {
 
     @Override
     public ProgramState execute(ProgramState state) {
-        MyStack<IStatement> stack = state.getExeStack();
+        IStack<IStatement> stack = state.getExeStack();
         stack.push(this.second);
         stack.push(this.first);
 

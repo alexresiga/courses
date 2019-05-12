@@ -1,8 +1,11 @@
 package model.Statement;
 
 import exceptions.FileNotOpenedException;
+import exceptions.MyBooleanException;
+import exceptions.UnknownVariableException;
 import model.Expression.Expression;
 import model.ProgramState;
+import model.utils.ITuple;
 import model.utils.MyTuple;
 
 import java.io.BufferedReader;
@@ -16,10 +19,10 @@ public class CloseRFile implements IStatement {
     }
 
     @Override
-    public ProgramState execute(ProgramState state) throws IOException {
+    public ProgramState execute(ProgramState state) throws IOException, UnknownVariableException, MyBooleanException {
 
-        int fd = this.expression.evaluate(state.getSymTable());
-        MyTuple<String, BufferedReader> file = state.getFileTable().remove(fd);
+        int fd = this.expression.evaluate(state.getSymTable(), state.getHeap());
+        ITuple<String, BufferedReader> file = state.getFileTable().remove(fd);
         if (file == null) {
             throw new FileNotOpenedException(String.format("FileNotOpenedException at: %s\nThere is no file opened with descriptor: %d", this.toString(), fd));
         }

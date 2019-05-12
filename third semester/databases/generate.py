@@ -3,9 +3,11 @@ from faker import Faker
 import time
 import datetime
 
+
 # some set up
 def encrypt(string, length, count):
-    return [int(x) for x in ' '.join(string[i:i+length] for i in range(0,len(string),length)).split(' ')][:count]
+    return [int(x) for x in ' '.join(string[i:i+length] for i in range(0, len(string), length)).split(' ')][:count]
+
 
 uid = encrypt('130171258299362364448460675736750757814890965', 3, 15)
 qid = encrypt('1004103210351047125513981598160716601713194020772089221222202245235024742508252026222653268927622970304430463286343634683480351335813593368237483890394640334051413242684361438943924446451745934779480348814903508152255248528453405467552055465649571757505838591261796221626564256465646765006641664866996783683968507244726172727302732873727451748875397634790581078115821284088617893691189435985098579983',4, 50)
@@ -33,6 +35,7 @@ comments = [first, bad, good, second, third]
 answers = [first, good, foR, third]
 # END
 
+
 def random_date():
         fake = Faker()
         return str(fake.date_time_this_century(before_now=True, after_now=False, tzinfo=None)) + "." + str(choice(uid))   
@@ -52,3 +55,4 @@ def generateComments():
     for i in range(100):
         print("({}, '{}', '{}', {}, {}),".format(str(randint(100000, 999999)), ' '.join([choice(i) for i in comments]), random_date(), choice(aid), choice(uid)))
 
+generateQuestions()

@@ -1,0 +1,78 @@
+
+Thread number: 1
+STACK: 
+openRFile(var_f, test.in)
+ReadFile(var_f, var_c); print(var_c); openRFile(var_g, test2.in)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+ReadFile(var_f, var_c); print(var_c); openRFile(var_g, test2.in)
+SYMBOL TABLE:
+var_f->1001
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+ReadFile(var_f, var_c)
+print(var_c); openRFile(var_g, test2.in)
+SYMBOL TABLE:
+var_f->1001
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(var_c); openRFile(var_g, test2.in)
+SYMBOL TABLE:
+var_f->1001
+var_c->15
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(var_c)
+openRFile(var_g, test2.in)
+SYMBOL TABLE:
+var_f->1001
+var_c->15
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+openRFile(var_g, test2.in)
+SYMBOL TABLE:
+var_f->1001
+var_c->15
+
+
+OUTPUT: 
+15
+HEAP: 
+
+-----------------------------------------------------

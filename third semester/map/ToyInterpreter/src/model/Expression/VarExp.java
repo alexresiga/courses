@@ -1,6 +1,7 @@
 package model.Expression;
 
-import model.utils.MyDictionary;
+import model.utils.IDictionary;
+import model.utils.IHeap;
 
 public class VarExp implements Expression {
 
@@ -10,12 +11,12 @@ public class VarExp implements Expression {
         this.name = name;
     }
 
-    public int evaluate(MyDictionary<String, Integer> st) {
+    public int evaluate(IDictionary<String, Integer> st, IHeap<Integer> heap) {
         if (st.contains(this.name)) {
             return st.get(this.name);
         }
         else {
-            throw new RuntimeException("non existing variable");
+            throw new RuntimeException("RuntimeException at " + this.toString() + " non existing variable");
         }
     }
 

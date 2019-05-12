@@ -2,16 +2,13 @@ package model.Statement;
 
 import exceptions.FileAlreadyOpenedException;
 import model.ProgramState;
+import model.utils.ITuple;
 import model.utils.MyTuple;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 
 public class OpenRFile implements IStatement {
 
-    private static int fd = 2;
+    private static int fd = 420;
     private String filename, varFileID;
 
     public OpenRFile(String varFileID, String filename) {
@@ -20,7 +17,7 @@ public class OpenRFile implements IStatement {
     }
 
     public ProgramState execute(ProgramState state) throws FileAlreadyOpenedException, FileNotFoundException {
-        for(MyTuple<String, BufferedReader> files: state.getFileTable().values()) {
+        for(ITuple<String, BufferedReader> files: state.getFileTable().values()) {
             if (files.getFirst().contains(this.filename)) {
                 throw new FileAlreadyOpenedException("FileAlreadyOpenedException at: " + this.toString() + "\nthe file " + this.filename + " is already opened.");
             }

@@ -1,0 +1,3705 @@
+
+Thread number: 1
+STACK: 
+v = 10; New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10; New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+v = 10; New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10; New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+v = 10
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22); fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+New(a,22)
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a))); print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(WriteHeap(a,30); v = 32; print(v); print(readHeap(a)))
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30); v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+
+HEAP: 
+1->22
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+WriteHeap(a,30)
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32; print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+v = 32
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v); print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(v)
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+print(readHeap(a))
+SYMBOL TABLE:
+a->1
+v->32
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32
+
+
+OUTPUT: 
+10
+30
+32
+30
+HEAP: 
+1->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->1
+v->10
+
+Thread number: 10
+STACK: 
+SYMBOL TABLE:
+a->1
+v->32

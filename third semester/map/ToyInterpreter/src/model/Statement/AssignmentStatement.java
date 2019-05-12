@@ -1,7 +1,11 @@
 package model.Statement;
 
+import exceptions.MyBooleanException;
+import exceptions.UnknownVariableException;
 import model.Expression.Expression;
 import model.ProgramState;
+import model.utils.IDictionary;
+import model.utils.IStack;
 import model.utils.MyDictionary;
 import model.utils.MyStack;
 
@@ -16,11 +20,10 @@ public class AssignmentStatement implements IStatement {
     }
 
     @Override
-    public ProgramState execute(ProgramState state) {
-        MyStack<IStatement> stack = state.getExeStack();
+    public ProgramState execute(ProgramState state) throws UnknownVariableException, MyBooleanException {
 
-        MyDictionary<String, Integer> symTable = state.getSymTable();
-        int value = expression.evaluate(symTable);
+        IDictionary<String, Integer> symTable = state.getSymTable();
+        int value = expression.evaluate(symTable, state.getHeap());
         symTable.put(name, value);
         return state;
     }

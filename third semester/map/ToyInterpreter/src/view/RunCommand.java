@@ -4,17 +4,22 @@ import controller.Controller;
 
 public class RunCommand extends Command {
 
-    private Controller ctr;
-    public RunCommand(String key, String desc, Controller ctr){
+    private Controller ctrl;
+
+    public RunCommand(String key, String desc, Controller ctrl){
         super(key, desc);
-        this.ctr=ctr;
+        this.ctrl = ctrl;
     }
+
     @Override
-    public void execute() {
+    public void execute()  {
+
         try{
-            ctr.allSteps(); }
+            ctrl.allSteps();
+        }
         catch (Exception exc) {
             System.out.println(exc.getMessage());
         }
     }
+
 }

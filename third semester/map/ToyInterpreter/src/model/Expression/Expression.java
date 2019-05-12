@@ -1,8 +1,11 @@
 package model.Expression;
 
-import model.utils.MyDictionary;
+import exceptions.MyBooleanException;
+import exceptions.UnknownVariableException;
+import model.utils.IDictionary;
+import model.utils.IHeap;
 
 public interface Expression {
-    int evaluate(MyDictionary<String, Integer> st);
+    int evaluate(IDictionary<String, Integer> st, IHeap<Integer> heap) throws UnknownVariableException, MyBooleanException;
     String toString();
 }

@@ -1,0 +1,36 @@
+
+Thread number: 1
+STACK: 
+v = 2
+print(v)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(v)
+SYMBOL TABLE:
+v->2
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+v->2
+
+
+OUTPUT: 
+2
+HEAP: 
+
+-----------------------------------------------------

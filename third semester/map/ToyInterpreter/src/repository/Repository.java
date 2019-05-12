@@ -2,6 +2,8 @@ package repository;
 
 import model.ProgramState;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -12,8 +14,10 @@ public class Repository implements IRepository {
     private ArrayList<ProgramState> states = new ArrayList<>();
     private String logFile;
 
-    public Repository(String logFile) {
+    public Repository(String logFile) throws FileNotFoundException {
         this.logFile = logFile;
+        File file = new File(this.logFile);
+        new PrintWriter(file);
     }
 
     @Override
@@ -35,5 +39,4 @@ public class Repository implements IRepository {
         printWriter.print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         printWriter.close();
     }
-
 }

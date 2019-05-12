@@ -28,9 +28,16 @@ public class MyStack<T> implements IStack<T> {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
+
+        Stack<T> tmp = (Stack<T>) this.stack.clone();
+        Stack<T> reversedStack = new Stack<>();
+        while (!tmp.empty())
+        {
+            reversedStack.push(tmp.pop());
+        }
         result.append("\nSTACK:\n");
-        for(T elem: this.stack)
-            result.append(elem.toString()).append(" | ");
+        for(T elem: reversedStack)
+            result.append(elem.toString()).append("\n");
         return result.toString();
     }
 }

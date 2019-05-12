@@ -2,7 +2,9 @@ package model.Expression;
 
 import exceptions.DivisionByZero;
 import exceptions.MyArithmeticException;
-import model.utils.MyDictionary;
+import exceptions.UnknownVariableException;
+import model.utils.IDictionary;
+import model.utils.IHeap;
 
 public class ArithExp implements Expression {
     private Expression op1, op2;
@@ -14,9 +16,9 @@ public class ArithExp implements Expression {
         this.operator = operator;
     }
 
-    public int evaluate(MyDictionary<String, Integer> st) throws DivisionByZero, MyArithmeticException {
-        int first = this.op1.evaluate(st);
-        int second = this.op2.evaluate(st);
+    public int evaluate(IDictionary<String, Integer> st, IHeap<Integer> heap) throws UnknownVariableException, DivisionByZero, MyArithmeticException {
+        int first = this.op1.evaluate(st, heap);
+        int second = this.op2.evaluate(st, heap);
 
         switch (this.operator) {
             case '+':

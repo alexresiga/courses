@@ -8,50 +8,62 @@ import java.io.BufferedReader;
 
 public class ProgramState {
 
-    private MyStack<IStatement> exeStack;
-    private MyList<Integer> Output;
-    private MyDictionary<String, Integer> symTable;
+    private IStack<IStatement> exeStack;
+    private IList<Integer> Output;
+    private IDictionary<String, Integer> symTable;
     private IStatement originalProgram;
-    private MyDictionary<Integer, MyTuple<String, BufferedReader>> fileTable;
+    private IDictionary<Integer, ITuple<String, BufferedReader>> fileTable;
+    private IHeap<Integer> heap;
 
-    public ProgramState(MyStack<IStatement> exeStack, MyList<Integer> Output, MyDictionary<String, Integer> symTable, MyDictionary<Integer, MyTuple<String, BufferedReader>> fileTable,IStatement Program) {
+    public ProgramState(IStack<IStatement> exeStack, IList<Integer> Output, IDictionary<String, Integer> symTable, IDictionary<Integer, ITuple<String, BufferedReader>> fileTable, IHeap<Integer> heap, IStatement Program) {
         this.exeStack = exeStack;
         this.Output = Output;
         this.symTable = symTable;
         this.fileTable = fileTable;
         this.originalProgram = Program;
+        this.heap = heap;
+        
     }
 
-    public MyDictionary<String, Integer> getSymTable() {
+
+    public IDictionary<String, Integer> getSymTable() {
         return this.symTable;
     }
 
-    public void setSymTable(MyDictionary<String, Integer> st) {
+    public void setSymTable(IDictionary<String, Integer> st) {
         this.symTable = st;
     }
 
-    public MyStack<IStatement> getExeStack() {
+    public IStack<IStatement> getExeStack() {
         return this.exeStack;
     }
 
-    public void setExeStack(MyStack<IStatement> exeStack) {
+    public void setExeStack(IStack<IStatement> exeStack) {
         this.exeStack = exeStack;
     }
 
-    public MyList<Integer> getOutput() {
+    public IList<Integer> getOutput() {
         return this.Output;
     }
 
-    public void setOutput(MyList<Integer> output) {
+    public void setOutput(IList<Integer> output) {
         this.Output = output;
     }
 
-    public MyDictionary<Integer, MyTuple<String, BufferedReader>> getFileTable() {
+    public IDictionary<Integer, ITuple<String, BufferedReader>> getFileTable() {
         return this.fileTable;
     }
 
-    public void setFileTable(MyDictionary<Integer, MyTuple<String, BufferedReader>> fileTable) {
+    public void setFileTable(IDictionary<Integer, ITuple<String, BufferedReader>> fileTable) {
         this.fileTable = fileTable;
+    }
+
+    public IHeap<Integer> getHeap() {
+        return this.heap;
+    }
+
+    public void setHeap(IHeap<Integer> heap) {
+        this.heap = heap;
     }
 
     public IStatement getOriginalProgram() {
@@ -63,6 +75,6 @@ public class ProgramState {
     }
 
     public String toString() {
-        return this.exeStack.toString() + "\nSYM TABLE:\n" + this.symTable.toString() + this.Output.toString() + "\nFILE TABLE:\n" + this.fileTable.toString();
+        return this.exeStack.toString() + "\nSYM TABLE:\n" + this.symTable.toString() + this.Output.toString() + "\nFILE TABLE:\n" + this.fileTable.toString() + "\nHEAP:\n" + this.heap.toString();
     }
 }

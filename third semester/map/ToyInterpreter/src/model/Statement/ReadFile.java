@@ -2,10 +2,11 @@ package model.Statement;
 
 import exceptions.FileAlreadyOpenedException;
 import exceptions.FileNotOpenedException;
+import exceptions.MyBooleanException;
+import exceptions.UnknownVariableException;
 import model.Expression.Expression;
 import model.ProgramState;
-import model.utils.MyTuple;
-
+import model.utils.ITuple;
 import java.io.BufferedReader;
 import java.io.IOException;
 
@@ -20,9 +21,9 @@ public class ReadFile implements IStatement {
     }
 
     @Override
-    public ProgramState execute(ProgramState state) throws FileAlreadyOpenedException, FileNotOpenedException, IOException {
-        int fd = this.expFileID.evaluate(state.getSymTable());
-        MyTuple<String, BufferedReader> file = state.getFileTable().get(fd);
+    public ProgramState execute(ProgramState state) throws UnknownVariableException, FileAlreadyOpenedException, FileNotOpenedException, IOException, MyBooleanException {
+        int fd = this.expFileID.evaluate(state.getSymTable(), state.getHeap());
+        ITuple<String, BufferedReader> file = state.getFileTable().get(fd);
         if (file == null) {
             throw new FileNotOpenedException("FileNotOpenedException at: " + this.toString() + "\nNo such file descriptor: " + String.valueOf(fd));
         }

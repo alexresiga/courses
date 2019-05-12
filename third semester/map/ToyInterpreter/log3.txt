@@ -1,0 +1,129 @@
+
+STACK:
+OpenRFile(var_f, test.in)
+ReadFile(var_f, var_c); print(var_c); OpenRFile(var_g, log4.txt)
+
+SYM TABLE:
+
+OUTPUT:
+
+FILE TABLE:
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+ReadFile(var_f, var_c); print(var_c); OpenRFile(var_g, log4.txt)
+
+SYM TABLE:
+var_f->421
+
+OUTPUT:
+
+FILE TABLE:
+421->test.in
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+ReadFile(var_f, var_c)
+print(var_c); OpenRFile(var_g, log4.txt)
+
+SYM TABLE:
+var_f->421
+
+OUTPUT:
+
+FILE TABLE:
+421->test.in
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(var_c); OpenRFile(var_g, log4.txt)
+
+SYM TABLE:
+var_f->421
+var_c->15
+
+OUTPUT:
+
+FILE TABLE:
+421->test.in
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+print(var_c)
+OpenRFile(var_g, log4.txt)
+
+SYM TABLE:
+var_f->421
+var_c->15
+
+OUTPUT:
+
+FILE TABLE:
+421->test.in
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+OpenRFile(var_g, log4.txt)
+
+SYM TABLE:
+var_f->421
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+421->test.in
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+
+SYM TABLE:
+var_f->421
+var_g->422
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+421->test.in
+422->log4.txt
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+
+SYM TABLE:
+var_f->421
+var_g->422
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+422->log4.txt
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STACK:
+
+SYM TABLE:
+var_f->421
+var_g->422
+var_c->15
+
+OUTPUT:
+15
+
+FILE TABLE:
+
+HEAP:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

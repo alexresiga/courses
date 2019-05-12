@@ -1,0 +1,188 @@
+
+Thread number: 1
+STACK: 
+a = 2+3*5
+b = a+1; print(b)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+a = 2+3*5
+b = a+1; print(b)
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+b = a+1; print(b)
+SYMBOL TABLE:
+a->17
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+b = a+1; print(b)
+SYMBOL TABLE:
+a->17
+
+Thread number: 1
+STACK: 
+b = a+1
+print(b)
+SYMBOL TABLE:
+a->17
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+b = a+1
+print(b)
+SYMBOL TABLE:
+a->17
+
+Thread number: 1
+STACK: 
+print(b)
+SYMBOL TABLE:
+a->17
+b->18
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(b)
+SYMBOL TABLE:
+a->17
+b->18
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->17
+b->18
+
+
+OUTPUT: 
+18
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->17
+b->18
+
+Thread number: 1
+STACK: 
+a = 2+3*5
+b = a+1; print(b)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+a = 2+3*5
+b = a+1; print(b)
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+b = a+1; print(b)
+SYMBOL TABLE:
+a->17
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+b = a+1; print(b)
+SYMBOL TABLE:
+a->17
+
+Thread number: 1
+STACK: 
+b = a+1
+print(b)
+SYMBOL TABLE:
+a->17
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+b = a+1
+print(b)
+SYMBOL TABLE:
+a->17
+
+Thread number: 1
+STACK: 
+print(b)
+SYMBOL TABLE:
+a->17
+b->18
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(b)
+SYMBOL TABLE:
+a->17
+b->18
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->17
+b->18
+
+
+OUTPUT: 
+18
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+a->17
+b->18

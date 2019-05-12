@@ -1,6 +1,6 @@
 package view;
 
-
+/*
 import model.ProgramState;
 import model.Statement.*;
 import model.utils.*;
@@ -109,7 +109,7 @@ public class UI {
         }
     }
 }
-/*
+
 SEMINAR3- EXEMPLU1
 var_f - descriptor fisier
 var_c - citeste din fisier

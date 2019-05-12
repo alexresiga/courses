@@ -1,0 +1,2000 @@
+
+Thread number: 1
+STACK: 
+NewHeap(v1,20)
+NewHeap(v2,30); NewLock(x); fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+
+
+OUTPUT: 
+
+HEAP: 
+
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewHeap(v1,20)
+NewHeap(v2,30); NewLock(x); fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+
+Thread number: 1
+STACK: 
+NewHeap(v2,30); NewLock(x); fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+v1->1
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewHeap(v2,30); NewLock(x); fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+v1->1
+
+Thread number: 1
+STACK: 
+NewHeap(v2,30)
+NewLock(x); fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+v1->1
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewHeap(v2,30)
+NewLock(x); fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+v1->1
+
+Thread number: 1
+STACK: 
+NewLock(x); fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewLock(x); fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+NewLock(x)
+fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewLock(x)
+fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)); NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x))
+NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x))
+NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewLock(q); fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)); Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+NewLock(q)
+fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x))
+Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+NewLock(q)
+fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+fork(Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x))
+Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)); z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+Lock(x); WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x); WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q))
+z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+fork(fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q))
+z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+z = 200; z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+WriteHeap(v1,readHeap(v1)+1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)); m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+z = 200
+z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+WriteHeap(v1,readHeap(v1)+1)
+unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q))
+m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+z = 200
+z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+WriteHeap(v1,readHeap(v1)+1)
+unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+fork(Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q))
+m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->200
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 5
+STACK: 
+Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->21
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+z = 300; z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->200
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+Lock(x)
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+m = 100; Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 5
+STACK: 
+Lock(q); WriteHeap(v2,readHeap(v2)+5); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+z = 300
+z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->200
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+m = 100
+Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 5
+STACK: 
+Lock(q)
+WriteHeap(v2,readHeap(v2)+5); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->21
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+z = 300
+z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->200
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+WriteHeap(v1,readHeap(v1)-1); unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+m = 100
+Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 5
+STACK: 
+Lock(q)
+WriteHeap(v2,readHeap(v2)+5); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->300
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+WriteHeap(v1,readHeap(v1)-1)
+unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+WriteHeap(v2,readHeap(v2)+5); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->21
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+z = 400; Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->300
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+WriteHeap(v1,readHeap(v1)-1)
+unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+Lock(q); WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+WriteHeap(v2,readHeap(v2)+5); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+z = 400
+Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->300
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+Lock(q)
+WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+WriteHeap(v2,readHeap(v2)+5)
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->30
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+z = 400
+Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->300
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+unlock(x)
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+Lock(q)
+WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+WriteHeap(v2,readHeap(v2)+5)
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+Lock(q)
+WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->35
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+Lock(x); print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+Lock(q)
+WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+Lock(x)
+print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+Lock(q)
+WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->35
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+Lock(x)
+print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+Lock(q)
+WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->35
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(v1)); unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+WriteHeap(v2,readHeap(v2)+1); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+print(readHeap(v1))
+unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+WriteHeap(v2,readHeap(v2)+1)
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+
+HEAP: 
+1->20
+2->35
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(v1))
+unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+WriteHeap(v2,readHeap(v2)+1)
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+20
+HEAP: 
+1->20
+2->36
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+unlock(x); Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+unlock(x)
+Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+20
+HEAP: 
+1->20
+2->36
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+unlock(x)
+Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+20
+HEAP: 
+1->20
+2->36
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+Lock(q); print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+Lock(q)
+print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+20
+HEAP: 
+1->20
+2->36
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+Lock(q)
+print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+20
+HEAP: 
+1->20
+2->36
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(v2)); unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+print(readHeap(v2))
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+20
+HEAP: 
+1->20
+2->36
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+print(readHeap(v2))
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+20
+36
+HEAP: 
+1->20
+2->36
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+unlock(q)
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+
+
+OUTPUT: 
+20
+36
+HEAP: 
+1->20
+2->36
+-----------------------------------------------------
+Thread number: 1
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+z->400
+v1->1
+v2->2
+
+Thread number: 2
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 3
+STACK: 
+SYMBOL TABLE:
+x->1
+v1->1
+v2->2
+
+Thread number: 4
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2
+m->100
+
+Thread number: 5
+STACK: 
+SYMBOL TABLE:
+q->2
+x->1
+v1->1
+v2->2

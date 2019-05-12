@@ -1,6 +1,7 @@
 package model.Expression;
 
-import model.utils.MyDictionary;
+import model.utils.IDictionary;
+import model.utils.IHeap;
 
 public class ConstExp implements Expression {
 
@@ -10,7 +11,7 @@ public class ConstExp implements Expression {
         this.value = value;
     }
 
-    public int evaluate(MyDictionary<String, Integer> st) {
+    public int evaluate(IDictionary<String, Integer> st, IHeap<Integer> heap) {
         return this.value;
     }
 

@@ -1,5 +1,7 @@
 package model.Statement;
 
+import exceptions.MyBooleanException;
+import exceptions.UnknownVariableException;
 import model.Expression.Expression;
 import model.ProgramState;
 
@@ -15,8 +17,8 @@ public class IfStatement implements IStatement {
     }
 
     @Override
-    public ProgramState execute(ProgramState state) {
-        if (expression.evaluate(state.getSymTable()) == 0) {
+    public ProgramState execute(ProgramState state) throws UnknownVariableException, MyBooleanException {
+        if (expression.evaluate(state.getSymTable(), state.getHeap()) == 0) {
 
             state.getExeStack().push(elseS);
         } else {
