@@ -16,5 +16,13 @@
 - Databases *databases*
 - Advanced Programming Methods *map*
 - Logic and Functional Programming *plf*
+- Probabilities and Statistics *muie sanda micula*
+
+## fourth semester
+- Systems for Design and Implementation *mpp*
+- Web Programming *web*
+- Database Management Systems *dbms*
+- Artificial Intelligence *ai*
+- Software Engineering *iss*
 
 **to be continued**
