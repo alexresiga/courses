@@ -1,0 +1,6 @@
+/Users/alex/Documents/UBB/fourth semester/dbms/lab1/lab1/bin/Debug/lab1.exe
+/Users/alex/Documents/UBB/fourth semester/dbms/lab1/lab1/bin/Debug/lab1.pdb
+/Users/alex/Documents/UBB/fourth semester/dbms/lab1/lab1/obj/Debug/lab1.csprojResolveAssemblyReference.cache
+/Users/alex/Documents/UBB/fourth semester/dbms/lab1/lab1/obj/Debug/lab1.csproj.CoreCompileInputs.cache
+/Users/alex/Documents/UBB/fourth semester/dbms/lab1/lab1/obj/Debug/lab1.exe
+/Users/alex/Documents/UBB/fourth semester/dbms/lab1/lab1/obj/Debug/lab1.pdb

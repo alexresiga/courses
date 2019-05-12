@@ -1,0 +1,3 @@
+swarmSize = 40
+iterations = 1000
+runs = 30
